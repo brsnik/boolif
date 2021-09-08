@@ -1,6 +1,6 @@
 ## Input
 
-### uni_boolif(`value:` true, `expected:` true, `output:` 'It works!', `fallback:` '')
+### nik_boolif(`value:` true, `expected:` true, `output:` 'It works!', `fallback:` '')
 
 Variable | Type | Required | Description 
 :------- | :--- | -------- | :----------
