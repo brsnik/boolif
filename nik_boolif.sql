@@ -4,14 +4,12 @@ CREATE OR REPLACE FUNCTION public.nik_boolif (
   output VARCHAR,
   fallback VARCHAR = NULL::VARCHAR
 )
-RETURNS VARCHAR AS $$
-BEGIN
-  CASE
-    WHEN value::BOOLEAN = expected::BOOLEAN THEN
-      RETURN output;
-    ELSE
-      RETURN fallback;
-  END CASE;
-END;
-$$ LANGUAGE sql 
+  RETURNS VARCHAR 
+AS $$
+  SELECT CASE 
+           WHEN value = expected THEN output
+           ELSE fallback
+         END;
+$$ 
+LANGUAGE sql 
 IMMUTABLE;
