@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION nik_boolif (
+CREATE OR REPLACE FUNCTION public.nik_boolif (
   value BOOLEAN,
   expected BOOLEAN,
   output VARCHAR,
