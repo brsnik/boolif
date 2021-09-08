@@ -1,5 +1,3 @@
-### SELECT uni_boolif(`value:` true, `expected:` true, `output:` 'It works!', `fallback:` '');
-
 ## Input
 
 | Variable | Type |Description | Required |
@@ -12,3 +10,8 @@
 ## Installation
 
 By default it will be added to the `public` schema.
+
+## Usage
+
+ ```SELECT uni_boolif(`value:` true, `expected:` true, `output:` 'It works!', `fallback:` '');```
+
