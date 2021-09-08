@@ -15,9 +15,11 @@ fallback | varchar | Optional | Will return `NULL` unless set to a specific `fal
 By default it will be added to the `public` schema.
 
 ## Usage
-
+With default fallback:
 -  ```SELECT nik_boolif(true, true, 'It works!');``` returns `'It works!'`
 -  ```SELECT nik_boolif(false, true, 'It works!');``` returns `NULL`
+
+With custom fallback:
 -  ```SELECT nik_boolif(true, true, 'It works!', 'Oh yeah!');``` returns `'It works!'`
 -  ```SELECT nik_boolif(false, true, 'It works!', 'Oh yeah!');``` returns `'Oh yeah!'`
 
