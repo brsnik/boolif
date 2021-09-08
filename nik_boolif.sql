@@ -2,7 +2,7 @@ CREATE OR REPLACE FUNCTION public.nik_boolif (
   value BOOLEAN,
   expected BOOLEAN,
   output VARCHAR,
-  fallback VARCHAR = ''::VARCHAR
+  fallback VARCHAR = NULL::VARCHAR
 )
 RETURNS VARCHAR AS $$
 BEGIN
