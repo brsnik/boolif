@@ -13,4 +13,5 @@ BEGIN
       RETURN fallback;
   END CASE;
 END;
-$$ LANGUAGE 'plpgsql' IMMUTABLE;
+$$ LANGUAGE sql 
+IMMUTABLE;
