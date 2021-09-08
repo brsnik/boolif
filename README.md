@@ -1,4 +1,4 @@
-Using CASE's is great however when there are too many options it can get uber complicated, this solves a very specific problem I've encountered.
+Using `CASE`'s is great however when there are too many options it can get uber complicated, this solves a very specific problem I've encountered.
 
 ## Input
 
