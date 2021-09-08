@@ -1,3 +1,5 @@
+Using CASE's is great however when there are too many options it can get uber complicated, this solves a very specific problem I've encountered.
+
 ## Input
 
 ### nik_boolif(`value:` true, `expected:` true, `output:` 'It works!', `fallback:` '')
