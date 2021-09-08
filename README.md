@@ -16,6 +16,6 @@ By default it will be added to the `public` schema.
 
 ## Usage
 
--  ```SELECT uni_boolif(true, true, 'It works!', '');``` returns `'It works!'`
--  ```SELECT uni_boolif(false, true, 'It works!', '');``` returns `NULL`
+-  ```SELECT uni_boolif(true, true, 'It works!');``` returns `'It works!'`
+-  ```SELECT uni_boolif(false, true, 'It works!');``` returns `NULL`
 
