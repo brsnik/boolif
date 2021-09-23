@@ -2,7 +2,7 @@ Using `CASE`'s is great however when there are too many conditions it can get ub
 
 ## Input
 
-### nik_boolif(`value:` true, `expected:` true, `output:` 'It works!', `fallback:` '')
+### boolif(`value:` true, `expected:` true, `output:` 'It works!', `fallback:` '')
 
 Variable | Type | Required | Description 
 :------- | :--- | -------- | :----------
@@ -18,10 +18,10 @@ By default it will be added to the `public` schema.
 
 ## Usage
 With default fallback:
--  ```SELECT nik_boolif(true, true, 'It works!');``` returns `'It works!'`
--  ```SELECT nik_boolif(false, true, 'It works!');``` returns `NULL`
+-  ```SELECT boolif(true, true, 'It works!');``` returns `'It works!'`
+-  ```SELECT boolif(false, true, 'It works!');``` returns `NULL`
 
 With custom fallback:
--  ```SELECT nik_boolif(true, true, 'It works!', 'Oh yeah!');``` returns `'It works!'`
--  ```SELECT nik_boolif(false, true, 'It works!', 'Oh yeah!');``` returns `'Oh yeah!'`
+-  ```SELECT boolif(true, true, 'It works!', 'Oh yeah!');``` returns `'It works!'`
+-  ```SELECT boolif(false, true, 'It works!', 'Oh yeah!');``` returns `'Oh yeah!'`
 
